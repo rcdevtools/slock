@@ -38,9 +38,11 @@ install: all
 	mkdir -p ${DESTDIR}${MANPREFIX}/man1
 	sed "s/VERSION/${VERSION}/g" <slock.1 >${DESTDIR}${MANPREFIX}/man1/slock.1
 	chmod 644 ${DESTDIR}${MANPREFIX}/man1/slock.1
+	cp -f slock@.service /etc/systemd/system
 
 uninstall:
 	rm -f ${DESTDIR}${PREFIX}/bin/slock
 	rm -f ${DESTDIR}${MANPREFIX}/man1/slock.1
+	rm -f /etc/systemd/system/slock@.service
 
 .PHONY: all clean dist install uninstall
