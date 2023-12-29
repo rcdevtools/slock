@@ -1,3 +1,5 @@
+-*- Patched by Awkless -*-
+
 slock - simple screen locker
 ============================
 simple screen locker utility for X.
@@ -22,3 +24,9 @@ Afterwards enter the following command to build and install slock
 Running slock
 -------------
 Simply invoke the 'slock' command. To get out of it, enter your password.
+
+
+Patches
+-------
+- Blur pixelated patch
+  <https://tools.suckless.org/slock/patches/blur-pixelated-screen/>.
