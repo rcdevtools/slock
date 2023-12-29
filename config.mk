@@ -1,5 +1,5 @@
 # slock version
-VERSION = 1.5.0-patch.1
+VERSION = 1.5.0-patch.2
 
 # Customize below to fit your system
 
